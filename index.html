@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrocheTina</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-pink-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-pink-200">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center p-6">
+      <div class="flex-1">
+        <h1 class="text-5xl md:text-5xl font-bold mb-4 text-pink-700">CrocheTina</h1>
+        <p class="mb-6 text-lg">Descubre adorables muñecos tejidos a crochet, perfectos para regalar o coleccionar.</p>
+        <a href="#productos" class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-lg font-medium transition">Ver Productos</a>
+      </div>
+      <div class="flex-1 mt-6 md:mt-0">
+        <img src="Imágenes/Logo_CrocheTina.png" alt="Amigurumi" class=" w-48 mx-auto bg-transparent">
+      </div>
+    </div>
+  </header>
+
+<!-- Productos -->
+<style>
+    .producto-img {
+        width: 220px;
+        height: 220px;
+        object-fit: contain;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        background: #fff;
+    }
+</style>
+  <section id="productos" class="max-w-6xl mx-auto py-12 px-6">
+    <h2 class="text-3xl font-bold text-center mb-8 text-pink-700">Nuestros Amigurumis</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
+        <img src="Imágenes/AmigurumiConejo.webp" alt="Conejito" class="producto-img rounded-lg mb-4">
+        <h3 class="text-xl font-semibold">Conejito Tierno</h3>
+        <p class="text-gray-600 mb-4">Suave, adorable y perfecto para niños pequeños.</p>
+        <span class="text-pink-600 font-bold text-lg">$12.000</span>
+      </div>
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
+        <img src="Imágenes/AmigurumiOso.webp" alt="Osito" class="producto-img rounded-lg mb-4">
+        <h3 class="text-xl font-semibold">Osito Dulce</h3>
+        <p class="text-gray-600 mb-4">Ideal para regalar en ocasiones especiales.</p>
+        <span class="text-pink-600 font-bold text-lg">$15.000</span>
+      </div>
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
+        <img src="Imágenes/AmigurumiOvejaLoca.webp" alt="Oveja" class="producto-img rounded-lg mb-4">
+        <h3 class="text-xl font-semibold">Oveja Juguetona</h3>
+        <p class="text-gray-600 mb-4">Para los amantes de las ovejas y lo hecho a mano.</p>
+        <span class="text-pink-600 font-bold text-lg">$14.000</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Nosotros -->
+  <section class="bg-pink-100 py-12 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-pink-700 mb-4">Sobre Nosotros</h2>
+      <p class="text-gray-700 text-lg">Pyme motivada por el crochet, creando amigurumis con amor y dedicación. Cada pieza es única y hecha 100% a mano, para que lleves un pedacito de ternura a tu hogar.</p>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-12 px-6 text-center">
+    <h2 class="text-3xl font-bold text-pink-700 mb-4">¿Quieres uno?</h2>
+    <p class="mb-6 text-lg">Haz tu pedido ahora y recibe tu amigurumi en casa.</p>
+    <a href="https://wa.me/56958817429" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-medium transition">Encargar por WhatsApp</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-pink-200 py-6 text-center">
+    <p class="text-gray-700">&copy; 2025 Amigurumis a Crochet | Hecho con ❤️ en Chile</p>
+  </footer>
+
+</body>
+</html>
