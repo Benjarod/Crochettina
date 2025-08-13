@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CrocheTina</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Fuentes de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
 </head>
 <body class="bg-pink-50 text-gray-800 font-sans">
 
@@ -15,7 +19,7 @@
         <img src="Imágenes/LogoCrochettina.png" alt="Logo_CrocheTina" class="w-32 mx-auto bg-transparent">
       </div>
       <div class="flex-1">
-        <h1 class="text-5xl md:text-5xl font-bold text-pink-700">CrocheTina</h1>
+        <h1 class="title text-8xl font-bold text-pink-700">CrocheTina</h1>
         <!-- <p class="mb-6 text-lg">Descubre adorables muñecos tejidos a crochet, perfectos para regalar o coleccionar.</p> -->
       </div>
       
@@ -24,6 +28,18 @@
 
 <!-- Productos -->
 <style>
+    .title {
+      font-family: "Birthstone", cursive;
+      font-style: normal;
+    }
+
+    .text2 {
+      font-family: "Sofia", cursive;
+      font-style: normal;
+    }
+
+
+
       .product-card{
         transition: transform 0.3s ease-in-out;
       }
@@ -165,20 +181,20 @@
   <!-- Sobre Nosotros -->
   <section class="bg-pink-100 py-12 px-6">
     <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-pink-700 mb-4">Aparte de los diseños que se ven en la página, puedes pedir alguno a tu gusto</h2>
+      <h2 class="text2 text-3xl font-bold text-pink-700 mb-4">Aparte de los diseños que se ven en la página, puedes pedir alguno a tu gusto.</h2>
     </div>
   </section>
 
   <!-- Call to Action -->
   <section class="py-12 px-6 text-center">
     <h2 class="text-3xl font-bold text-pink-700 mb-4">¿Quieres uno?</h2>
-    <p class="mb-6 text-lg">Haz tu pedido ahora y recibe tu amigurumi en casa.</p>
+    <p class="mb-6 text-lg">Haz tu pedido ahora.</p>
     <a href="https://wa.me/56958817429" target="_blank" class="bg-pink-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-medium transition">Encargar por WhatsApp</a>
   </section>
 
   <!-- Footer -->
   <footer class="bg-pink-200 py-6 text-center">
-    <p class="font-bold text-pink-700">Crochettina</p>
+    <p class="title text-5xl text-pink-700">Crochettina</p>
   </footer>
 
   
