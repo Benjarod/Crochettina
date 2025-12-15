@@ -18,11 +18,9 @@
       <div class="flex-1 mt-6 md:mt-0">
         <img src="Imágenes/LogoCrochettina.png" alt="Logo_CrocheTina" class="w-32 mx-auto bg-transparent">
       </div>
-      <div class="flex-1">
-        <h1 class="title text-8xl font-bold text-pink-700">CrocheTina</h1>
-        <!-- <p class="mb-6 text-lg">Descubre adorables muñecos tejidos a crochet, perfectos para regalar o coleccionar.</p> -->
-      </div>
-      
+      <div class="flex-1 text-center md:text-left">
+        <h1 class="title text-5xl md:text-8xl font-bold text-pink-700">CrocheTina</h1>
+        </div>
     </div>
   </header>
 
@@ -61,6 +59,15 @@
         display: block;
         background: #fff;
     }
+    /* Ocultar barra de scroll para Chrome, Safari and Opera */
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    /* Ocultar barra de scroll para IE, Edge and Firefox */
+    .scrollbar-hide {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
     </style>
   <!-- Sección Amigurumis -->
   
@@ -75,7 +82,7 @@
       <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-pink-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
     </button>
     <div class="overflow-hidden">
-      <div id="carousel-1" class="carousel-container flex gap-6 overflow-x-hidden py-8 px-2"></div>
+      <div id="carousel-1" class="carousel-container flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide py-8 px-2"></div>
     </div>
   </div>
 
@@ -88,7 +95,7 @@
       <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-pink-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
     </button>
     <div class="overflow-hidden">
-      <div id="carousel-2" class="carousel-container flex gap-6 overflow-x-hidden py-8 px-2"></div>
+      <div id="carousel-2" class="carousel-container flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide py-8 px-2"></div>
     </div>
   </div>
 </section>
@@ -104,7 +111,7 @@
       <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-pink-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
     </button>
     <div class="overflow-hidden">
-      <div id="carousel-3" class="carousel-container flex gap-6 overflow-x-hidden py-8 px-2"></div>
+      <div id="carousel-3" class="carousel-container flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide py-8 px-2"></div>
     </div>
   </div>
 </section>
@@ -148,7 +155,7 @@
       function renderCarousel(containerId, products) {
         const carousel = document.getElementById(containerId);
         carousel.innerHTML = products.map(product => `
-          <div class="product-card flex-none bg-white rounded-lg p-4 max-w-xs shadow-lg">
+          <div class="product-card snap-center flex-none bg-white rounded-lg p-4 max-w-xs shadow-lg">
             <img src="${product.image}" alt="${product.name}" class="producto-img h-48 object-cover rounded-lg mb-4">
             <h3 class="text-black text-xl font-semibold">${product.name}</h3>
             <span class="text-lg text-pink-600 font-bold">${product.price}</span>
