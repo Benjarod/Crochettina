@@ -19,7 +19,7 @@
         <img src="Imágenes/LogoCrochettina.png" alt="Logo_CrocheTina" class="w-32 mx-auto bg-transparent">
       </div>
       <div class="flex-1 text-center md:text-left">
-        <h1 class="title text-5xl md:text-8xl font-bold text-pink-700">CrocheTina</h1>
+        <h1 class="title text-5xl md:text-8xl font-bold text-pink-700">Crochettina</h1>
         </div>
     </div>
   </header>
@@ -68,12 +68,16 @@
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
     }
+    #svg {
+      width: 50px;
+      height: 50px;
+    }
     </style>
   <!-- Sección Amigurumis -->
   
   <!-- Carrusel 1 -->
 <section class="max-w-6xl mx-auto py-12 px-6">
-  <h2 class="text-3xl font-bold text-center text-pink-700">Amigurumis</h2>
+  <h2 class="text-3xl font-bold text-center text-pink-700">Animales</h2>
   <div class="relative">
     <button id="prev-btn-1" class="absolute left-4 top-1/2 -translate-y-1/2 bg-pink-200 text-gray-800 rounded-full p-2 shadow-lg z-10">
       <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-pink-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
@@ -88,6 +92,7 @@
 
   <!-- Carrusel 2 -->
   <div class="relative">
+    <h2 class="text-3xl font-bold text-center text-pink-700">Personas</h2>
     <button id="prev-btn-2" class="absolute left-4 top-1/2 -translate-y-1/2 bg-pink-200 text-gray-800 rounded-full p-2 shadow-lg z-10">
       <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-pink-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
     </button>
@@ -98,12 +103,10 @@
       <div id="carousel-2" class="carousel-container flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide py-8 px-2"></div>
     </div>
   </div>
-</section>
 
-<!-- Carrusel 3 -->
-<section class="max-w-6xl mx-auto py-12 px-6">
-  <h2 class="text-3xl font-bold text-center text-pink-700">Flores</h2>
+   <!-- Carrusel 3 -->
   <div class="relative">
+    <h2 class="text-3xl font-bold text-center text-pink-700">Flores</h2>
     <button id="prev-btn-3" class="absolute left-4 top-1/2 -translate-y-1/2 bg-pink-200 text-gray-800 rounded-full p-2 shadow-lg z-10">
       <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-pink-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
     </button>
@@ -114,7 +117,22 @@
       <div id="carousel-3" class="carousel-container flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide py-8 px-2"></div>
     </div>
   </div>
+
+  <!-- Carrusel 4 -->
+  <div class="relative">
+    <h2 class="text-3xl font-bold text-center text-pink-700">Random</h2>
+    <button id="prev-btn-4" class="absolute left-4 top-1/2 -translate-y-1/2 bg-pink-200 text-gray-800 rounded-full p-2 shadow-lg z-10">
+      <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-pink-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+    </button>
+    <button id="next-btn-4" class="absolute right-4 top-1/2 -translate-y-1/2 bg-pink-200 text-gray-800 rounded-full p-2 shadow-lg z-10">
+      <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-pink-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+    </button>
+    <div class="overflow-hidden">
+      <div id="carousel-4" class="carousel-container flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide py-8 px-2"></div>
+    </div>
+  </div>
 </section>
+
 
 
   <script>
@@ -122,28 +140,40 @@
         {
           id: 1,
           productos: [
-            { name: "Abejita", price: "$2000", image: "Imágenes/Imagen1.jpg" },
+            { name: "Vaquita granjera", price: "$3000", image: "Imágenes/VaquitaGranjera.jpg" },
             { name: "Pascal", price: "$3000", image: "Imágenes/Imagen2.jpg" },
             { name: "Oveja Coquette", price: "$3000", image: "Imágenes/Imagen4.jpg" },
             { name: "Vaquita Hippie", price: "$3000", image: "Imágenes/Imagen5.jpg" },
-            { name: "...", price: "$...", image: "Imágenes/LogoCrochettina.png" },
+            { name: "Panda", price: "$3000", image: "Imágenes/panda.jpg" },
+            { name: "Polar", price: "$3000", image: "Imágenes/polar.jpg" },
+            { name: "Abejita", price: "$2000", image: "Imágenes/Imagen1.jpg" },
           ]
         },
         {
           id: 2,
           productos: [
-            { name: "Spiderman Colgante", price: "$2000", image: "Imágenes/Imagen3.jpg" },
-            { name: "Mecánico", price: "$3000", image: "Imágenes/Imagen6.jpg" },
+            { name: "Spiderman Colgante", price: "$3000", image: "Imágenes/Imagen3.jpg" },
+            { name: "Enfermera Personalizada", price: "$4500", image: "Imágenes/enfermera1.jpg" },
+            { name: "Spiderman negro", price: "$2000", image: "Imágenes/spiderman_negro.jpg" },
+            { name: "Spiderman negro", price: "$2000", image: "Imágenes/spiderman_rojo.jpg" },
+            { name: "Enfermera Personalizada", price: "$4500", image: "Imágenes/enfermera2.jpg" },
+          ]
+        },
+        {
+          id: 3,
+          productos: [
+            { name: "Girasol en maceta", price: "$3500", image: "Imágenes/Imagen7.jpg" },
+            { name: "Tulipán especial", price: "$2000", image: "Imágenes/Imagen8.jpg" },
+            { name: "...", price: "$...", image: "Imágenes/LogoCrochettina.png" },
             { name: "...", price: "$...", image: "Imágenes/LogoCrochettina.png" },
             { name: "...", price: "$...", image: "Imágenes/LogoCrochettina.png" },
             { name: "...", price: "$...", image: "Imágenes/LogoCrochettina.png" },
           ]
         },
         {
-          id: 3,
+          id: 4,
           productos: [
-            { name: "Girasol en maceta", price: "$2000", image: "Imágenes/Imagen7.jpg" },
-            { name: "Tulipán especial", price: "$2000", image: "Imágenes/Imagen8.jpg" },
+            { name: "Shop cerveza", price: "$2000", image: "Imágenes/ShopCerveza.jpg" },
             { name: "...", price: "$...", image: "Imágenes/LogoCrochettina.png" },
             { name: "...", price: "$...", image: "Imágenes/LogoCrochettina.png" },
             { name: "...", price: "$...", image: "Imágenes/LogoCrochettina.png" },
@@ -188,7 +218,7 @@
   <!-- Sobre Nosotros -->
   <section class="bg-pink-100 py-12 px-6">
     <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text2 text-3xl font-bold text-pink-700 mb-4">Aparte de los diseños que se ven en la página, puedes pedir alguno a tu gusto.</h2>
+      <h2 class="text2 text-3xl text-pink-700 mb-4">Aparte de los diseños que se ven en la página <br> puedes pedir alguno a tu gusto.</h2>
     </div>
   </section>
 
@@ -196,7 +226,7 @@
   <section class="py-12 px-6 text-center">
     <h2 class="text-3xl font-bold text-pink-700 mb-4">¿Quieres uno?</h2>
     <p class="mb-6 text-lg">Haz tu pedido ahora.</p>
-    <a href="https://wa.me/56958817429" target="_blank" class="bg-pink-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-medium transition">Encargar por WhatsApp</a>
+    <a href="https://www.instagram.com/_.crochettina._/?igsh=bmJjczlidW5pZ2s2#" target="_blank" class="bg-pink-500 hover:bg-pink-300 text-white px-6 py-3 rounded-lg font-medium transition">Instagram</a>
   </section>
 
   <!-- Footer -->
